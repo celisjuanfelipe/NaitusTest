@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using NaitusTest.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<railwayContext>(options =>
+                options.UseMySql(builder.Configuration.GetConnectionString("conexion"), Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.31-mysql")));
 
 var app = builder.Build();
 
