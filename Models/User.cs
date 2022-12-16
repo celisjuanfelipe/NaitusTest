@@ -10,7 +10,7 @@ namespace NaitusTest.Models
         public string? Name { get; set; }
         public string? LastName { get; set; }
         public string? Email { get; set; }
-        public DateOnly? Date { get; set; }
+        public DateOnly? DateOfBirth { get; set; }
         public string? Pass { get; set; }
     }
 }

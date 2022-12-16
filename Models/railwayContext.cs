@@ -40,7 +40,7 @@ namespace NaitusTest.Models
                     .ValueGeneratedNever()
                     .HasColumnName("id");
 
-                entity.Property(e => e.Date).HasColumnName("date");
+                entity.Property(e => e.DateOfBirth).HasColumnName("date");
 
                 entity.Property(e => e.Email)
                     .HasColumnType("text")
